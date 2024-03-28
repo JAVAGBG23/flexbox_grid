@@ -39,3 +39,79 @@ body {
 .stretch + .stretch {
   margin-left: 2%;
 }
+
+/*EXEMPEL 4, exempel 5 + 6 har samma flex container class*/
+/*parent*/
+.container-blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/*children*/
+.blog {
+  width: 48%;
+  height: 100px;
+  margin-bottom: 2%;
+  background-color: goldenrod;
+  border-radius: 5px;
+}
+
+.blog:nth-child(3n) {
+  width: 100%;
+}
+
+/*EXEMPEL 5*/
+.grid-item {
+  flex: 0 32%;
+  height: 100px;
+  margin-bottom: 2%;
+  background-color: khaki;
+  border-radius: 5px;
+}
+
+/*EXEMPEL 6*/
+/*om vi vill ha skala (16:9)*/
+.grid-1-1 {
+  width: 32%;
+  padding-bottom: 32%;
+  margin-bottom: 2%;
+  position: relative;
+  background-color: lightpink;
+  border-radius: 5px;
+}
+
+/*EXEMPEL 7*/
+.container-graph {
+  display: flex;
+  height: 300px;
+  justify-content: space-between;
+  flex-direction: column;
+  /*   align-items: flex-end; */
+}
+
+.graph {
+  height: 14%;
+  background-color: thistle;
+  border-radius: 5px;
+}
+
+.one {
+  width: 40%;
+}
+
+.two {
+  width: 50%;
+}
+
+.three {
+  width: 60%;
+}
+
+.four {
+  width: 20%;
+}
+
+.five {
+  width: 30%;
+}
