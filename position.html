@@ -3,12 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <title>Position Example</title>
+    <style>
+      .relative {
+        position: relative;
+        left: 20px;
+        top: 20px;
+      }
+
+      .absolute {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        background-color: lightgreen;
+      }
+
+      .container {
+        position: relative;
+        height: 200px;
+        top: 40px;
+        background-color: lightgray;
+      }
+
+      .fixed {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: lightcoral;
+      }
+    </style>
   </head>
   <body>
     <div class="relative">Relative Positioning</div>
     <div class="container">
       <div class="absolute">Absolute Positioning</div>
     </div>
+
     <div class="fixed">Fixed Positioning</div>
   </body>
 </html>
