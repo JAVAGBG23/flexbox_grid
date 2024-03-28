@@ -1,0 +1,45 @@
+/*GRID CSS*/
+
+.container {
+  display: grid;
+  width: 1000px;
+  margin: 30px auto;
+  border: 2px solid black;
+  grid-template-rows: repeat(2, 150px);
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* grid-template-columns: repeat(2, 150px) 1fr; */
+  /* grid-template-columns: 1fr 2fr 1fr; */
+  grid-template-columns: 150px 150px 150px;
+  /*repeat(3, 150px)*/
+  gap: 30px;
+}
+
+.item {
+  padding: 20px;
+  font-size: 30px;
+  color: white;
+}
+
+.i1 {
+  background-color: orangered;
+}
+
+.i2 {
+  background-color: yellowgreen;
+}
+
+.i3 {
+  background-color: blueviolet;
+}
+
+.i4 {
+  background-color: palevioletred;
+}
+
+.i5 {
+  background-color: royalblue;
+}
+
+.i6 {
+  background-color: goldenrod;
+}
