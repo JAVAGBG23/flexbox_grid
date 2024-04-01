@@ -1,14 +1,53 @@
 /*GRID CSS*/
 
+/*
+med CSS Grid Layout får vi en ny flexibel enhet: fr-enheten. 
+fr är en fractional unit och 1fr är för 1 del av det 
+tillgängliga utrymmet.*/
+
 .container {
   display: grid;
   width: 1000px;
   margin: 30px auto;
   border: 2px solid black;
+  /*1. grid-template-rows: repeat(2, 150px);
+  detta definierar två rader där varje rad är 150px hög. 
+  repeat(2, 150px) är en förkortning som anger att mönstret 
+  (i det här fallet en höjd på 150px) ska upprepas två gånger.*/
   grid-template-rows: repeat(2, 150px);
+
+  /*
+  4. grid-template-columns: repeat(3, 1fr);
+  det här skapar tre kolumner som alla tar upp en lika stor del av den 
+  tillgängliga bredden. Eftersom repeat(3, 1fr) används, delas utrymmet 
+  lika mellan alla tre kolumner.
+  */
   /* grid-template-columns: repeat(3, 1fr); */
+
+  /*
+  2. grid-template-columns: repeat(2, 150px) 1fr;
+  här definieras tre kolumner. de första två kolumnerna är var 
+  150px breda, och den tredje kolumnen tar upp resten av den tillgängliga 
+  bredden (1fr). 1fr står för en fraktion av det tillgängliga utrymmet.
+  */
   /* grid-template-columns: repeat(2, 150px) 1fr; */
+
+  /*
+  3. grid-template-columns: 1fr 2fr 1fr;
+  detta skapar tre kolumner där den mittersta kolumnen är dubbelt 
+  så bred som de kolumnerna på var sida om den. 1fr betyder en del 
+  av det tillgängliga utrymmet, så om det totala utrymmet är 3 delar, 
+  tar den mittersta kolumnen 2 av dessa delar, medan de yttre kolumnerna 
+  tar 1 del vardera.
+  */
   /* grid-template-columns: 1fr 2fr 1fr; */
+
+  /*
+  5. grid-template-columns: 150px 150px 150px;
+  detta definierar tre kolumner, var och en 150px bred. Det är ett mer direkt 
+  sätt att säga samma sak som repeat(3, 150px), vilket skulle ha skapat 
+  samma layout.
+  */
   grid-template-columns: 150px 150px 150px;
   /*repeat(3, 150px)*/
   gap: 30px;
